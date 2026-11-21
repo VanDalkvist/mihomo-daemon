@@ -1,0 +1,19 @@
+{
+  "name": "mihomo-daemon",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "test": "node --test --test-timeout=30000 test/*.test.ts",
+    "check": "node scripts/check.ts"
+  },
+  "exports": {
+    "./client": "./src/client.ts",
+    "./connection": "./src/connection.ts",
+    "./contracts": "./src/contracts.ts",
+    "./runtime": "./src/runtime.ts"
+  }
+}
