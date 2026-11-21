@@ -15,3 +15,6 @@ Live readiness used GET /version only and returned 1.19.32.
 Parent receipts confirm same process PID/start time, identical live config SHA256 and BB HEAD/worktree unchanged.
 Original install/uninstall scripts intentionally not carried over because they kill processes, rewrite TUN and remove runtime cache.
 Existing deployment remains authoritative; service management on a new machine remains an explicit native launchctl operation, never an extension side effect.
+
+## Publication privacy audit — 2026-11-21
+Inspected every tracked file and all reachable history. Gitleaks current/history scans and personal-metadata/image checks found no issues; 5 daemon tests passed. The plist has generic Homebrew paths, not private configuration. Added ignore rules for local configuration, keys, runtime databases and screenshots. No privacy blocker found for publishing this repository; visibility remains private, and no production source/service/config change was made. See docs/publication-audit.md.

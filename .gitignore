@@ -1,3 +1,21 @@
 node_modules/
 .env
 *.log
+
+# Never track local configuration, runtime data, keys or screenshots.
+.env.*
+config.yaml
+config.yml
+providers/
+cache/
+*.pem
+*.key
+*.p12
+*.pfx
+*.db
+*.sqlite*
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
