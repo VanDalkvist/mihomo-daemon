@@ -27,6 +27,6 @@ No live YAML/subscriptions, credential URLs or native binaries are committed.
 Node 26+. npm test. node scripts/check.ts performs a GET-only readiness check.
 
 ## Publication and portability
-The source repository is public; package.json private:true only prevents accidental npm publication. No upstream Mihomo binary or running VPN data is included. No reuse license is granted implicitly by public visibility.
+The source repository is public; package.json private:true only prevents accidental npm publication. No upstream Mihomo binary or running VPN data is included. The controller wrapper and service-definition source are licensed under [MIT](LICENSE). This does not relicense the separate upstream Mihomo binary.
 The plist is an Apple-Silicon Homebrew example that runs Mihomo as root; it is not a cross-platform installer and must be reviewed before use on another machine. Readiness proves only a controller /version response, not correct traffic routing, DNS leak prevention or a kill switch.
 The Ultimate integration is published as a sanitized snapshot in [ultimate-extensions/extensions/vpn](https://github.com/VanDalkvist/ultimate-extensions/tree/main/extensions/vpn), with this repository pinned via public HTTPS.
