@@ -3,7 +3,7 @@ export type Fetch = typeof globalThis.fetch
 export type IssueCode = 'offline' | 'auth' | 'invalid' | 'api' | 'config' | 'conflict'
 export class MihomoError extends Error {
   readonly code: IssueCode
-  constructor(code: IssueCode, message: string) {
-    super(message); this.name = 'MihomoError'; this.code = code
+  constructor(code: IssueCode, message: string, options?: ErrorOptions) {
+    super(message, options); this.name = 'MihomoError'; this.code = code
   }
 }

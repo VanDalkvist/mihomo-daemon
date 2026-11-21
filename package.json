@@ -11,6 +11,7 @@
     "check": "node scripts/check.ts"
   },
   "exports": {
+    ".": "./index.ts",
     "./client": "./src/client.ts",
     "./connection": "./src/connection.ts",
     "./contracts": "./src/contracts.ts",
